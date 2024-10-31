@@ -6,6 +6,7 @@ import 'package:weather_app_tutorial/extensions/datetime.dart';
 import 'package:weather_app_tutorial/extensions/strings.dart';
 import 'package:weather_app_tutorial/providers/current_weather_provider.dart';
 import 'package:weather_app_tutorial/views/gradient_container.dart';
+import 'package:weather_app_tutorial/views/hourly_forecast_view.dart';
 import 'package:weather_app_tutorial/views/weather_info.dart';
 
 class WeatherScreen extends ConsumerWidget {
@@ -91,10 +92,10 @@ class WeatherScreen extends ConsumerWidget {
                   ))
             ],
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          // HourlyForecastWeather()
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          const HourlyForecastView()
         ]);
       },
       loading: () {

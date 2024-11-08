@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app_tutorial/constants/text_styles.dart';
+import 'package:weather_app_tutorial/views/famous_cities_view.dart';
 import 'package:weather_app_tutorial/views/gradient_container.dart';
 import 'package:weather_app_tutorial/widgets/location_icon.dart';
 import 'package:weather_app_tutorial/widgets/round_textfield.dart';
@@ -56,7 +57,10 @@ class _SearchScreenState extends State<SearchScreen> {
             const SizedBox(width: 10),
             const LocationIcon()
           ],
-        )
+        ),
+        const SizedBox(height: 30),
+        const FamousCitiesView(),
+        const SizedBox(height: 30),
       ]),
     );
   }

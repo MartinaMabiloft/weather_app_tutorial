@@ -56,26 +56,27 @@ class HourlyWeatherTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
       child: Material(
         color: isActive ? AppColors.lightBlue : AppColors.accentBlue,
         borderRadius: BorderRadius.circular(10),
         elevation: isActive ? 4 : 2,
         // animationDuration: const Duration(milliseconds: 300),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
                 getWeatherIcon(weatherCode: id),
-                width: 35,
+                width: 30,
               ),
-              const SizedBox(width: 5),
+              const SizedBox(width: 10),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     hour,

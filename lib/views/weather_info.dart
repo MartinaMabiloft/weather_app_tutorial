@@ -23,7 +23,7 @@ class WeatherInfo extends StatelessWidget {
             WeatherInfoTile(
               title: 'Temperature',
               value:
-                  '${weather.main.temp.toStringAsFixed(1).replaceAll('.', ',')}°',
+                  '${weather.main.temp.toDouble().toStringAsFixed(1).replaceAll('.', ',')}°',
             ),
             WeatherInfoTile(
               title: 'Speed',

@@ -12,7 +12,7 @@ import '/utils/logging.dart';
 class ApiHelper {
   static const baseUrl = 'https://api.openweathermap.org/data/2.5';
   static const weeklyWeatherUrl =
-      'https://open-meteo.com/v1/forecast?current=&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto';
+      'https://api.open-meteo.com/v1/forecast?current=&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto';
   static double lat = 0.0;
   static double lon = 0.0;
   static final dio = Dio();
